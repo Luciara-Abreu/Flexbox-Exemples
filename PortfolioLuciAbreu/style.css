@@ -4,7 +4,6 @@ html, body  {
 }
 .container {
   min-height: 100%;
-  position: relative;
   padding-bottom: 100px; /* Espaço para o footer */
 }
 
@@ -52,12 +51,17 @@ html, body  {
   align-items: center;
 }
 
-.p-perfil, .p-contact, .p-skills{
+.p-perfil-graduation{
   width: 20%;  
   margin: 0;
-  padding: 0 5% 0 4%;
-
+  padding: 0 15% 0 4%;
 }
+
+.p-perfil, .p-contact, .p-skills{
+    width: 20%;  
+    margin: 0;
+    padding: 0 5% 0 4%;
+  }
 
 .linha-horizontal {
   width: 65%; 
@@ -183,10 +187,11 @@ html, body  {
 }
   
 .footer-final{
+  width: 100vh;
   bottom: 0;
   left: 0;
   width: auto;
-  height: 5%; /* Defina a altura desejada para o footer */
+  height: 2%; /* Defina a altura desejada para o footer */
   background-color: #333;
   color:#f2f2f2;
   box-sizing: border-box;
