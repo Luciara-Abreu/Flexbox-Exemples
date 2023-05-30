@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Itens</title>
+  <style>
+    .container {
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+    }
+
+    .item {
+      background: blueviolet;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
+
+    .center {
+      align-items: center;
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+
+    .start {
+      align-items: start;
+    }
+
+    .end {
+      align-items: end;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .central {
+      height: 300px;
+      justify-content: center;
+    }
+
+    .central .item {
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Align-Itens rows</h1>
+  <p>Center</p>
+  <section class="container center">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto </div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>Stretch</p>
+  <section class="container stretch">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>Start</p>
+  <section class="container start">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>End</p>
+  <section class="container end">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <!---- Baseline não funcionou aqui!! -->
+  <p>Baseline</p>
+  <section class="container baseline">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lbaalbalbabalba</div>
+  </section>
+
+  <!------------------------------------>
+  <h1>Align-Itens column</h1>
+
+  <p>Center</p>
+  <section class="container center column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto </div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>Stretch</p>
+  <section class="container stretch column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>Start</p>
+  <section class="container start column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>End</p>
+  <section class="container end column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lablablba balbaalbalbabalba</div>
+  </section>
+
+  <p>Baseline</p>
+  <section class="container baseline column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalbaba lbaalbalbabalba</div>
+  </section>
+
+  <!---- Baseline não funcionou aqui!! -->
+  <p>Baseline</p>
+  <section class="container baseline column">
+    <div class="item">Item 1</div>
+    <div class="item">Qualquer texto</div>
+    <div class="item">Blablaablbalbalblblablbalba ksadashd flsslfalfhaslhlsjhdljlashldlajsd hba lbaalbalbabalba</div>
+  </section>
+
+  <p>Alinhamento Central a Tela</p>
+  <section class="container central center">
+    <div class="item">Blablaablbalbalblblablbalhshldhahdç
+      jsçkaçskdjçkjasçdj çkjlksj lkaslfd ljsh ljha knsljnd
+      ljba ksadashd flsslfalfhaslhlsjhdljlashldlajsd hba
+      lbaalbalbabalba
+    </div>
+  </section>
+
+
+</body>
+</html>
